@@ -1,7 +1,15 @@
-
+import React,{useEffect} from 'react';
+import { getApi } from './services/api';
 import './App.css';
 
+
+
 function App() {
+
+useEffect({
+  
+},[])
+
   return (
     <div>
   <h1>hello to my shop!</h1>
