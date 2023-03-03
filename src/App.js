@@ -1,6 +1,6 @@
 
 import './App.css';
-import {Link,Route,Routes} from'react-router-dom'
+import {Route,Routes,Navigate} from'react-router-dom'
 import Store from './Store';
 //context
 import ProductContextProvider from './context/ProductContextProvider';
@@ -12,7 +12,8 @@ function App() {
   return (
    <ProductContextProvider>
    <Routes>
-   <Route path='/product' element={<Store/>} />
+   <Route path='/products' element={<Store/>} />
+   <Route path='/*' element={<Navigate to ='/products'/>}/>
    </Routes>
    
    </ProductContextProvider>
