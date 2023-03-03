@@ -2,7 +2,7 @@
 import React from 'react';
 import './Product.css'
 //function
-import shorter from '../helper/functions'
+import {shorter} from '../helper/functions'
 
 
 const Product = ({productData}) => {
