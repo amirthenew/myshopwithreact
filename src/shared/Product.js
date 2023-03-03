@@ -1,12 +1,12 @@
 
 import React from 'react';
-import { Context } from 'react';
 
-const Product = () => {
+
+const Product = ({productData}) => {
     return ( <div>
-        <div>
+
         <img src=''/>
-        <h3>title</h3>
+        <h3>{productData.title}</h3>
         <p>price</p>
         <div>
         <a>details</a>
@@ -15,8 +15,6 @@ const Product = () => {
         </button>
         </div>
         </div>
-        </div>
-        
         </div> );
 }
  

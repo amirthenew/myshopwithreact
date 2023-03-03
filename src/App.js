@@ -1,5 +1,4 @@
-import React,{useEffect} from 'react';
-import { getApi } from './services/api';
+
 import './App.css';
 import Store from './Store';
 //context
@@ -12,7 +11,6 @@ function App() {
   return (
    <ProductContextProvider>
    <Store/>
-   
    </ProductContextProvider>
   );
 }

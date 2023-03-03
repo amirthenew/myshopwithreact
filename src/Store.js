@@ -1,5 +1,6 @@
 import React ,{useContext}from 'react';
 import { ProductsContext } from './context/ProductContextProvider';
+import Product from './shared/Product';
 
 const Store = () => {
 
@@ -8,9 +9,10 @@ const Store = () => {
     return (
         <div>
            {
-products.map((item)=>{
-return item
-})
+products.map((product)=>{ 
+    <Product 
+    key={product.id} 
+productData={products}/>})
 
         } 
         </div>
