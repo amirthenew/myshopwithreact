@@ -1,14 +1,22 @@
 import React ,{useContext}from 'react';
-import { Context } from 'react';
+import { ProductsContext } from './context/ProductContextProvider';
 
 const Store = () => {
-    return (
 
+    const products = useContext(ProductsContext)
+
+    return (
         <div>
-        <h1>
-        my shop
-        </h1>
+           {
+products.map((item)=>{
+return item
+})
+
+        } 
         </div>
+    
+
+   
       );
 }
  

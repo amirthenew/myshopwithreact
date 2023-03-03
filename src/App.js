@@ -12,6 +12,7 @@ function App() {
   return (
    <ProductContextProvider>
    <Store/>
+   
    </ProductContextProvider>
   );
 }
