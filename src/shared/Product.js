@@ -5,11 +5,11 @@ import React from 'react';
 const Product = ({productData}) => {
     return ( <div>
 
-        <img src=''/>
+        <img src={productData.image} alt="product" style={{width: "200px"}} />
         <h3>{productData.title}</h3>
-        <p>price</p>
+        <p>{productData.price}</p>
         <div>
-        <a>details</a>
+        <a href='#'>details</a>
         <div>
         <button> Add to Cart
         </button>
