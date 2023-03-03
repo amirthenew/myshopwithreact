@@ -1,9 +1,10 @@
 
 import React from 'react';
+import './Product.css'
 
 
 const Product = ({productData}) => {
-    return ( <div>
+    return ( <div className='container'>
 
         <img src={productData.image} alt="product" style={{width: "200px"}} />
         <h3>{productData.title}</h3>

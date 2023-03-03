@@ -1,4 +1,5 @@
 
 .container {
-    width: 200px;
+    display: flex;
+    flex-wrap:wrap;
 }
