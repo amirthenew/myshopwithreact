@@ -1,8 +1,11 @@
 import React from 'react';
 
-const ProductDetails = () => {
+
+
+const ProductDetails = (props) => {
+    const id = props.match.params.id
     return ( 
-        <h2>test</h2>
+        <h2>details of {id}</h2>
      );
 }
  

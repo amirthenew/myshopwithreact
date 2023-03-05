@@ -3,6 +3,7 @@ import React from 'react';
 import './Product.css'
 //function
 import {shorter} from '../helper/functions'
+import { Route,Routes,Link } from 'react-router-dom';
 
 
 const Product = ({productData}) => {
