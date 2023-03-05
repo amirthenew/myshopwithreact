@@ -13,7 +13,7 @@ const Product = ({productData}) => {
         <h3>{shorter(productData.title)}</h3>
         <p>{productData.price}</p>
         <div>
-        <a href='#'>details</a>
+        <Link to={`/products/${productData.id}`}>details</Link>
         <div>
         <button> Add to Cart
         </button>
