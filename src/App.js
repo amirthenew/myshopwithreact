@@ -7,6 +7,7 @@ import Store from './Store';
 import ProductDetails from './shared/ProductDetails';
 //context
 import ProductContextProvider from './context/ProductContextProvider';
+import Header from './Header';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
 
   return (
    <ProductContextProvider>
+   <Header/>
    <Routes>
    <Route path='/products/:id' element={<ProductDetails/>} />
    <Route path='/products' element={<Store/>} />
