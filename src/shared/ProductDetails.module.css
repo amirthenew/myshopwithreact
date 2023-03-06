@@ -1,0 +1,20 @@
+.container {
+display: flex;
+}
+
+.imgbox { 
+    display: flex;
+}
+
+.imgbox img { 
+width: 200px;
+}
+
+.cartdetais {
+   display: flex;
+   flex-direction: column;
+}
+
+.cartdetais p {
+    width: 50%;
+}
