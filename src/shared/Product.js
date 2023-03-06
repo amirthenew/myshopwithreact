@@ -9,7 +9,8 @@ import {Link } from 'react-router-dom';
 const Product = ({productData}) => {
     return ( <div className='container'>
 
-        <img src={productData.image} alt="product" style={{width: "200px"}} />
+    <div className='box'>
+           <img src={productData.image} alt="product" style={{width: "200px"}} />
         <h3>{shorter(productData.title)}</h3>
         <p>{productData.price}</p>
         <div>
@@ -19,6 +20,8 @@ const Product = ({productData}) => {
         </button>
         </div>
         </div>
+    </div>
+ 
         </div> );
 }
  

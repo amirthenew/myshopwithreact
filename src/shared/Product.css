@@ -3,4 +3,14 @@
     padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
+    background-color: rgb(255, 193, 113);
+    
+}
+
+.box {
+    background-color: antiquewhite;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
 }
