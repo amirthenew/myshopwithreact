@@ -1,6 +1,8 @@
 
 import './App.css';
+
 import {Route,Routes,Navigate} from'react-router-dom'
+//components
 import Store from './Store';
 import ProductDetails from './shared/ProductDetails';
 //context
