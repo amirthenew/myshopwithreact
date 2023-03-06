@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Link ,useParams} from 'react-router-dom';
 import { ProductsContext } from '../context/ProductContextProvider';
 import styles from './ProductDetails.module.css'
-
+import Cart from '../Cart';
 const ProductDetails = () => {
 const params = useParams()
     const id = params.id
@@ -27,6 +27,8 @@ const params = useParams()
 <Link to='/products'>back</Link>
 </div>
 </div>
+
+<Cart/>
 
 
  
