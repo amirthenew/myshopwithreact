@@ -10,7 +10,7 @@ const Product = ({productData}) => {
     return ( <div className='container'>
 
     <div className='box'>
-           <img src={productData.image} alt="product" style={{width: "200px"}} />
+           <img className='image' src={productData.image} alt="product" style={{width: "200px"}} />
         <h3>{shorter(productData.title)}</h3>
         <p>{productData.price}</p>
         <div>
