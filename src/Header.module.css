@@ -5,5 +5,15 @@
     background-color: rgb(49, 49, 49);
     color: #fff;
     padding-left: 1rem;
+    display: flex;
+    justify-content: space-between;
 
+}
+
+.cart{
+padding-right: 2rem;
+height: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
 }
