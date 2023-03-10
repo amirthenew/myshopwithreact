@@ -63,13 +63,13 @@ const cartReducer = (state,action) =>{
 
 export const CartContext = createContext()
 
-const CartContextProvider = () => {
+const CartContextProvider = ({children}) => {
 
 const [state,dispatch] = useReducer(cartReducer,initialState)
 
     return (
 <CartContext.Provider value={{state,dispatch}}>
-
+{children}
 </CartContext.Provider>  
         
         );
