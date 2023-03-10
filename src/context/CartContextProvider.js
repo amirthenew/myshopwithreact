@@ -4,6 +4,7 @@ import React,{useReducer} from 'react';
 const initialState = {
     selectedItems : [],
     itemsCounter : 0,
+    total:0,
     checkout : false
 }
 
@@ -44,15 +45,19 @@ const cartReducer = (state,action) =>{
                 return{
                     selectedItems : [],
                     itemsCounter : 0,
+                    total:0,
                     checkout : true
                 }
             case 'CLEAR':
                 return{
                     selectedItems : [],
                     itemsCounter : 0,
+                    total:0,
                     checkout : false
                 }
 
+                default:
+                    return state;
     }
 }
 
