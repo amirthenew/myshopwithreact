@@ -12,7 +12,7 @@ console.log(state);
         <h1>header</h1>
         <div className={styles.cart}>
         <img className={styles.cart} src={cart}/>
-        <span>1</span>
+        <span>{state.itemsCounter}</span>
         </div>
 
         </div>
