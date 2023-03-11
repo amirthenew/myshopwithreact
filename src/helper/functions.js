@@ -8,6 +8,7 @@ const shorter = (title)=> {
 
 
 const isInCart = (state,id)=>{
-    const result = state.selectedItems.find((item)=> item.id ===id)
+    const result = !!state.selectedItems.find((item)=> item.id ===id)
+    return result
 }
-export {shorter}
+export {shorter,isInCart}

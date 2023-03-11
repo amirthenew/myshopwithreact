@@ -2,7 +2,7 @@
 import React,{useContext,useState} from 'react';
 import './Product.css'
 //function
-import {shorter} from '../helper/functions'
+import {shorter,isInCart} from '../helper/functions'
 import {Link } from 'react-router-dom';
 
 
