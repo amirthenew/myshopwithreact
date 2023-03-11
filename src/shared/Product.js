@@ -27,10 +27,9 @@ const Product = ({productData}) => {
             <button onClick={()=>dispatch({type:'ADD_ITEM',payload: productData})}>Add to cart</button>
         }
 
-        {
-quantityCount(state,productData.id) === 1 &&  <button onClick={()=>dispatch({type:'DECREASE',payload : productData})}>-</button>
-
-        }
+        {quantityCount(state,productData.id) > 1 &&  <button onClick={()=>dispatch({type:'DECREASE',payload : productData})}>-</button>}
+        {quantityCount(state,productData.id) === 1 && <button onClick={()=>dispatch({type:'REMOVE_ITEM' ,payload :productData})}>Remove</button> }
+        
         </div>
         </div>
     </div>
