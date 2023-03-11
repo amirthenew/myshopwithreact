@@ -2,7 +2,7 @@
 import React,{useContext,useState} from 'react';
 import './Product.css'
 //function
-import {shorter,isInCart} from '../helper/functions'
+import {shorter,isInCart,quantityCount} from '../helper/functions'
 import {Link } from 'react-router-dom';
 
 
@@ -28,8 +28,8 @@ const Product = ({productData}) => {
         }
 
         {
+quantityCount(state,productData.id) === 1 &&  <button onClick={()=>dispatch({type:'DECREASE',payload : productData})}>-</button>
 
-            
         }
         </div>
         </div>
