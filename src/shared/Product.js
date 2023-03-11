@@ -21,8 +21,10 @@ const Product = ({productData}) => {
         <div>
         <Link to={`/products/${productData.id}`}>details</Link>
         <div>
-        <button> Add to Cart
-        </button>
+        {
+            isInCart(state,productData.id) ?
+            <button onClick={()=>dispatch({type:'INCREASE',payload: productData})}>+</button>
+        }
         </div>
         </div>
     </div>
