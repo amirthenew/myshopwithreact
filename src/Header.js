@@ -1,8 +1,12 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import styles from './Header.module.css'
 import cart from '../src/img/cart.png'
+import { CartContext } from './context/CartContextProvider';
 
 const Header = () => {
+
+  const {state} = useContext(CartContext)
+console.log(state);
     return (
         <div className={styles.header}>
         <h1>header</h1>
