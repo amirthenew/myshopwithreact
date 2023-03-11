@@ -26,6 +26,11 @@ const Product = ({productData}) => {
             <button onClick={()=>dispatch({type:'INCREASE',payload: productData})}>+</button> :
             <button onClick={()=>dispatch({type:'ADD_ITEM',payload: productData})}>Add to cart</button>
         }
+
+        {
+
+            
+        }
         </div>
         </div>
     </div>
