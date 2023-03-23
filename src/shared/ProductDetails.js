@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Link ,useParams} from 'react-router-dom';
 import { ProductsContext } from '../context/ProductContextProvider';
 import styles from './ProductDetails.module.css'
-import Cart from '../Cart';
+import Cart from '../ShopCart';
 const ProductDetails = () => {
 const params = useParams()
     const id = params.id

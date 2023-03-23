@@ -6,7 +6,7 @@ import {Route,Routes,Navigate} from'react-router-dom'
 import Store from './Store';
 import Header from './Header';
 import ProductDetails from './shared/ProductDetails';
-import Cart from './Cart';
+import Cart from './ShopCart';
 //context
 import ProductContextProvider from './context/ProductContextProvider';
 import CartContextProvider from './context/CartContextProvider';

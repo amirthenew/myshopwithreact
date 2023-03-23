@@ -1,11 +1,11 @@
 import React,{useContext} from 'react';
 import styles from './Cart.module.css'
-
+import Cart from './shared/Cart';
 //context
 import { CartContext } from './context/CartContextProvider';
 
 
-const Cart = () => {
+const ShopCart = () => {
   
 const {state,dispatch} = useContext(CartContext)
     return (
@@ -19,4 +19,4 @@ const {state,dispatch} = useContext(CartContext)
       );
 }
  
-export default Cart;
+export default ShopCart;
