@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 
 // Context
-import { CartContext } from '../../context/CartContextProvider';
+import { CartContext } from '../context/CartContextProvider';
 
 // Functions
-import { shorten } from '../../helper/functions';
+import {shorter} from '../helper/functions'
 
 
 const Cart = (props) => {
@@ -16,7 +16,7 @@ const Cart = (props) => {
         <div>
             <img src={image} alt="prduct" />
             <div>
-                <h3>{shorten(title)}</h3>
+                <h3>{shorter(title)}</h3>
                 <p>{price} $</p>
             </div>
             <div>
@@ -26,7 +26,7 @@ const Cart = (props) => {
                 {
                     quantity > 1 ?
                     <button onClick={() => dispatch({type: "DECREASE", payload: props.data})}>-</button> :
-                    <button onClick={() => dispatch({type: "REMOVE_ITEM", payload: props.data})}><img src={trashIcon} alt="trash" style={{width: "20px"}} /></button>
+                    <button onClick={() => dispatch({type: "REMOVE_ITEM", payload: props.data})}>remove</button>
                 }
                 <button onClick={() => dispatch({type: "INCREASE", payload: props.data})}>+</button>
             </div>

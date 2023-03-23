@@ -16,7 +16,7 @@ const params = useParams()
 
         <div className={styles.container}>
 <div className={styles.imgbox}>
-<img src={image}/>
+<img alt='image' src={image}/>
 </div>
 <div className={styles.cartdetais}>
 <h2>{title}</h2>
