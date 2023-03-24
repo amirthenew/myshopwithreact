@@ -2,7 +2,16 @@
     background-color: chocolate;
     display: flex;
     border: dotted 1px #000;
+    width: 60vw;
+    padding: 1rem;
+    position: relative;
 }
 .container img {
     max-width: 100px;
+    border-radius: 1rem;
+}
+.buttons{
+padding: 1rem;
+position: absolute;
+right: 0;
 }

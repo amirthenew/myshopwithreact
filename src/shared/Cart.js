@@ -8,15 +8,15 @@ import {shorter} from '../helper/functions'
 //styles
 import styles from './Cart.module.css'
 
-
-
 const Cart = (props) => {
 
     const {dispatch} = useContext(CartContext);
     const {image, title, price, quantity} = props.data;
 
     return (
+
         <div className={styles.container}>
+
             <img src={image} alt="product" />
             <div>
                 <h3>{shorter(title)}</h3>
