@@ -1,6 +1,7 @@
 import React,{useContext} from 'react';
 import styles from './Cart.module.css'
 import Cart from './shared/Cart';
+import { Link } from 'react-router-dom';
 //context
 import { CartContext } from './context/CartContextProvider';
 
@@ -27,7 +28,19 @@ const {state,dispatch} = useContext(CartContext)
           </div>
           </div>
         }
-  
+        {
+          state.checkout && <div>
+              <h3>Checked Out Successfully</h3>
+              <Link to="/products">Buy More</Link>
+          </div>
+      }
+
+      {
+          !state.checkout && state.itemsCounter === 0 && <div>
+              <h3>Want to Buy?</h3>
+              <Link to="/products">Go to Shop</Link>
+          </div>
+      }
         </div>
       );
 }
