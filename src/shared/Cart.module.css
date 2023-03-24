@@ -1,0 +1,8 @@
+.container{
+    background-color: chocolate;
+    display: flex;
+    border: dotted 1px #000;
+}
+.container img {
+    max-width: 100px;
+}

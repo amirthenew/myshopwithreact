@@ -1,5 +1,5 @@
 import React,{useContext} from 'react';
-import styles from './Cart.module.css'
+import styles from './ShopCart.module.css'
 import Cart from './shared/Cart';
 import { Link } from 'react-router-dom';
 //context
@@ -12,12 +12,12 @@ const {state,dispatch} = useContext(CartContext)
     return (
 
         <div className={styles.container}>
-        <div>
+        <div className={styles.cart}>
         {state.selectedItems.map(item=> <Cart key={item.id} data={item}/>)}
         </div>
 
         {
-          state.itemsCounter > 0 && <div>
+          state.itemsCounter > 0 && <div className={styles.total}>
           <p><span>total items</span> {state.itemsCounter}</p>
           <p><span>total payment</span> {state.total}</p>
           <div>

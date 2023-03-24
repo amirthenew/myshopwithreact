@@ -5,6 +5,8 @@ import { CartContext } from '../context/CartContextProvider';
 
 // Functions
 import {shorter} from '../helper/functions'
+//styles
+import styles from './Cart.module.css'
 
 
 const Cart = (props) => {
@@ -13,7 +15,7 @@ const Cart = (props) => {
     const {image, title, price, quantity} = props.data;
 
     return (
-        <div>
+        <div className={styles.container}>
             <img src={image} alt="product" />
             <div>
                 <h3>{shorter(title)}</h3>
