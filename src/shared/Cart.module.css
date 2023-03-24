@@ -1,5 +1,5 @@
 .container{
-    background-color: chocolate;
+    background-color: rgb(215, 215, 215);
     display: flex;
     border: dotted 1px #000;
     width: 60vw;
@@ -14,4 +14,26 @@
 padding: 1rem;
 position: absolute;
 right: 0;
+}
+
+.icon {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0.1rem;
+    font-size: x-large;
+}
+
+.trash {
+    
+    color: rgb(196, 0, 0);
+   
+}
+
+.plus {
+    color: rgb(99, 165, 0);
+
+}
+.minus {
+    color: rgb(29, 29, 29);
 }
