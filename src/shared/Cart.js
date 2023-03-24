@@ -9,6 +9,7 @@ import {shorter} from '../helper/functions'
 import styles from './Cart.module.css'
 
 
+
 const Cart = (props) => {
 
     const {dispatch} = useContext(CartContext);
@@ -20,11 +21,12 @@ const Cart = (props) => {
             <div>
                 <h3>{shorter(title)}</h3>
                 <p>{price} $</p>
+                <span>quantity : {quantity}</span>
             </div>
             <div>
-                <span>{quantity}</span>
+               
             </div>
-            <div>
+            <div className={styles.buttons}>
                 {
                     quantity > 1 ?
                     <button onClick={() => dispatch({type: "DECREASE", payload: props.data})}>-</button> :
