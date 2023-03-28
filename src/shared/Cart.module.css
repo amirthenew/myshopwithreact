@@ -1,10 +1,13 @@
 .container{
-    background-color: rgb(215, 215, 215);
+    background-color: rgb(255, 255, 255);
     display: flex;
     border: dotted 1px #000;
     width: 60vw;
     padding: 1rem;
     position: relative;
+    margin : 1rem 0;
+    box-shadow: 5px 5px 10px #ccc;
+    border-radius: 1rem;
 }
 .container img {
     max-width: 100px;
@@ -18,22 +21,12 @@ right: 0;
 
 .icon {
     border: none;
-    background-color: transparent;
+    background-color: #00a9fd;
     cursor: pointer;
-    padding: 0.1rem;
+    padding: 0.3rem;
     font-size: x-large;
+    color: #fff;
+    margin: 0 0.2rem;
+    border-radius: 0.5rem;
 }
 
-.trash {
-    
-    color: rgb(196, 0, 0);
-   
-}
-
-.plus {
-    color: rgb(99, 165, 0);
-
-}
-.minus {
-    color: rgb(29, 29, 29);
-}
