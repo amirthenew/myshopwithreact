@@ -17,9 +17,20 @@ margin: 2rem ;
     border-radius: 1rem;
     max-height: 100px;
     position: fixed;
+    width:15vw;
+    right: 8rem;
     
 }
 
 .leftbutton{
     margin-left: 0.5rem ;
+}
+
+.buttons{
+    text-align: center;
+    margin-top: 1rem;
+}
+.buttons button {
+    border: none;
+    padding: .5rem;
 }

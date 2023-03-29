@@ -28,7 +28,6 @@ const params = useParams()
 </div>
 </div>
 
-<Cart/>
 
 
  
