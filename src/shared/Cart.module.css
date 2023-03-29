@@ -1,7 +1,7 @@
 .container{
     background-color: rgb(255, 255, 255);
     display: flex;
-    border: dotted 1px #000;
+    border: solid 1px #d0d0d0;
     width: 60vw;
     padding: 1rem;
     position: relative;
