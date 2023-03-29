@@ -31,13 +31,15 @@ const cartReducer = (state,action) =>{
             return{
                 ...state,
                 selectedItems:[...state.selectedItems],
-                ...totalProduct(state.selectedItems)
+                ...totalProduct(state.selectedItems),
+                checkout:false
             }
             case 'REMOVE_ITEM':
                 const newSelectedItems = state.selectedItems.filter(item=> item.id !== action.payload.id)
                 return {
-                    ...state,selectedItems :[...newSelectedItems],
-                    ...totalProduct(state.selectedItems)
+                    ...state,
+                    selectedItems :[...newSelectedItems],
+                    ...totalProduct(newSelectedItems)
                 }
             case 'INCREASE' :
 
@@ -55,7 +57,7 @@ const cartReducer = (state,action) =>{
                     ...state,
                     ...totalProduct(state.selectedItems)
                 }
-            case 'CHECKOUT' :
+            case 'CHECKOUT':
                 return{
                     selectedItems : [],
                     itemsCounter : 0,
