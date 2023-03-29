@@ -20,10 +20,10 @@ const {state,dispatch} = useContext(CartContext)
           state.itemsCounter > 0 && <div className={styles.total}>
           <p><span>total items</span> {state.itemsCounter}</p>
           <p><span>total payment</span> {state.total}</p>
-          <div>
+          <div className={styles.buttons}>
           
-          <button onClick={()=> dispatch({type : 'CHECKOUT'})}>check out</button>
-          <button onClick={()=> dispatch({type : 'CLEAR'})}>Clear</button>
+          <button  onClick={()=> dispatch({type : 'CHECKOUT'})}>check out</button>
+          <button className={styles.leftbutton} onClick={()=> dispatch({type : 'CLEAR'})}>Clear</button>
           
           </div>
           </div>
