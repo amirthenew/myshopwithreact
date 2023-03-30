@@ -34,3 +34,12 @@
     border-radius: 0.5rem;
 }
 
+.count{
+    border: none;
+    background-color: #00a9fd;
+    cursor: pointer;
+    padding: 0.3rem;
+    color: #fff;
+    margin: 0 0.2rem;
+    border-radius: 0.5rem;
+}
