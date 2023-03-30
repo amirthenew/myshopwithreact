@@ -29,8 +29,8 @@ const Product = ({productData}) => {
     <div className='box'>
            <img className='image' src={productData.image} alt="product" style={{width: "200px"}} />
         <h3>{shorter(productData.title)}</h3>
-        <p>{productData.price}</p>
-        <div>
+        <span className='price'>{productData.price}</span>
+        <div className='details'>
         <Link to={`/products/${productData.id}`}>details</Link>
         <div>
 

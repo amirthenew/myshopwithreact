@@ -43,3 +43,15 @@
     margin: 0 0.2rem;
     border-radius: 0.5rem;
 }
+
+.details{
+    
+}
+
+.price {
+    background-color: #00a9fd;
+    width: 3vw;
+    color: #fff;
+    border-radius: .5rem;
+    padding: 0.2rem;
+}
