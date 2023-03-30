@@ -27,16 +27,15 @@ const Product = ({productData}) => {
     return ( <div className='container'>
 
     <div className='box'>
-           <img className='image' src={productData.image} alt="product" style={{width: "200px"}} />
+    <Link to={`/products/${productData.id}`}><img className='image' src={productData.image} alt="product" style={{width: "200px"}} /></Link>
         <h3>{shorter(productData.title)}</h3>
-        <span className='price'>{productData.price}</span>
-        <div className='details'>
-        <Link to={`/products/${productData.id}`}>details</Link>
+        <div className='priceandcounter'>
+        <span className='price'>{productData.price} $</span>
         <div>
 
         {quantityCount(state,productData.id) > 1 &&  <button className='icon' onClick={()=>dispatch({type:'DECREASE',payload : productData})}>{minusIcon}</button>}
         {quantityCount(state,productData.id) === 1 && <button className='icon' onClick={()=>dispatch({type:'REMOVE_ITEM' ,payload :productData})}>{faTrashs}</button> }
-        {quantityCount(state,productData.id) > 0 && <span className='count'>{quantityCount(state,productData.id)}</span> }
+        {quantityCount(state,productData.id) > 0 && <span className='count'>`{quantityCount(state,productData.id)}</span> }
         {
             isInCart(state,productData.id) ?
             <button className='icon' onClick={()=>dispatch({type:'INCREASE',payload: productData})}>{PlusIcon}</button> :
@@ -44,9 +43,15 @@ const Product = ({productData}) => {
         }
 
         
+    
+        </div>
+        </div>
+        
+        <div className='details'>
+
         
         </div>
-        </div>
+        
     </div>
  
         </div> );

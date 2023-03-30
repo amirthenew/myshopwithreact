@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     box-shadow: 5px 5px 20px #3f3f3f;
-    min-height: 350px;
+    min-height: 150px;
     width: 200px;
 
 }
@@ -50,8 +50,13 @@
 
 .price {
     background-color: #00a9fd;
-    width: 3vw;
+
     color: #fff;
     border-radius: .5rem;
     padding: 0.2rem;
+}
+.priceandcounter{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.3rem;
 }
