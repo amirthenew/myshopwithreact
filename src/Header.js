@@ -10,8 +10,8 @@ const Header = () => {
 
     return (
         <div className={styles.header}>
-        <h1>header</h1>
-        <Link to='/products'><h3 style={{lineHeight:'45px'}}>bcak to shop</h3></Link>
+        <h1>my first fake shop !</h1>
+        <Link style={{color:'#fff',textDecoration:'none'}} to='/products'><h3 style={{lineHeight:'45px'}}>bcak to shop</h3></Link>
         <div className={styles.cart}>
         <Link to='/cart'>
         <img className={styles.cart} src={cart}/>

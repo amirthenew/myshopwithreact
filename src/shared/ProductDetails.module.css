@@ -18,3 +18,49 @@ max-width: 400px;
 .cartdetais p {
     width: 50%;
 }
+
+
+
+.box {
+
+margin-top: 1rem;
+    flex-direction: column;
+
+
+}
+
+.image{
+
+   height: 250px;
+}
+
+.icon {
+    border: none;
+    background-color: #00a9fd;
+    cursor: pointer;
+    padding: .5rem;
+    color: #fff;
+    margin: 0 0.2rem;
+    border-radius: 0.5rem;
+    font-size: x-large;
+
+}
+
+.count{
+    border: none;
+    background-color: #00a9fd;
+    cursor: pointer;
+    padding: 0.3rem;
+    color: #fff;
+    margin: 0 0.2rem;
+    border-radius: 0.5rem;
+    font-size: x-large;
+}
+
+
+
+.priceandcounter{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.3rem;
+}

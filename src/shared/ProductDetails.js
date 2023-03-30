@@ -37,15 +37,15 @@ const ProductDetails = (productData) => {
 <div>
 <span>{price}$</span>
 <Link to='/products'>back</Link>
-<div>
+<div className={styles.box}>
 
-{quantityCount(state,productData.id) > 1 &&  <button className='icon' onClick={()=>dispatch({type:'DECREASE',payload : productData})}>{minusIcon}</button>}
-{quantityCount(state,productData.id) === 1 && <button className='icon' onClick={()=>dispatch({type:'REMOVE_ITEM' ,payload :productData})}>{faTrashs}</button> }
-{quantityCount(state,productData.id) > 0 && <span className='count'>{quantityCount(state,productData.id)}</span> }
+{quantityCount(state,productData.id) > 1 &&  <button className={styles.icon} onClick={()=>dispatch({type:'DECREASE',payload : productData})}>{minusIcon}</button>}
+{quantityCount(state,productData.id) === 1 && <button className={styles.icon} onClick={()=>dispatch({type:'REMOVE_ITEM' ,payload :productData})}>{faTrashs}</button> }
+{quantityCount(state,productData.id) > 0 && <span className={styles.count}>{quantityCount(state,productData.id)}</span> }
 {
     isInCart(state,productData.id) ?
-    <button className='icon' onClick={()=>dispatch({type:'INCREASE',payload: productData})}>{PlusIcon}</button> :
-    <button className='icon' onClick={()=>dispatch({type:'ADD_ITEM',payload: productData})}>{cartPlus}</button>
+    <button className={styles.icon} onClick={()=>dispatch({type:'INCREASE',payload: productData})}>{PlusIcon}</button> :
+    <button className={styles.icon} onClick={()=>dispatch({type:'ADD_ITEM',payload: productData})}>{cartPlus}</button>
 }
 
 
