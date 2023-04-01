@@ -1,27 +1,28 @@
 import React,{useContext} from 'react';
 import styles from './Header.module.css'
-import cart from '../src/img/cart.png'
 import { CartContext } from './context/CartContextProvider';
 import { Link } from 'react-router-dom';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faCartPlus} from '@fortawesome/free-solid-svg-icons'
 const Header = () => {
 
+  const cartPlus = <FontAwesomeIcon icon={faCartPlus}/> 
   const {state} = useContext(CartContext)
 
     return (
         <div className={styles.header}>
 
-        <h1>fake shop !</h1>
         <Link style={{color:'#fff',textDecoration:'none'}} to='/products'><h3 style={{lineHeight:'45px'}}>bcak to shop</h3></Link>
         <div className={styles.cart}>
           <Link to='/cart'>
-          <img className={styles.cart} src={cart}/>
+          <span className={styles.counter}>{state.itemsCounter}</span>
+          <i>{cartPlus}</i>
           </Link>
-          <span>{state.itemsCounter}</span>
+          
         </div>
 
         </div>
-      );
+    )
         
 }
  
