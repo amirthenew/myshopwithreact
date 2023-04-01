@@ -3,7 +3,7 @@ import { Link ,useParams} from 'react-router-dom';
 import { ProductsContext } from '../context/ProductContextProvider';
 import styles from './ProductDetails.module.css'
 import { CartContext } from '../context/CartContextProvider';
-import {shorter,isInCart,quantityCount} from '../helper/functions'
+import {isInCart,quantityCount} from '../helper/functions'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faTrash} from '@fortawesome/free-solid-svg-icons'
 import {faPlus} from '@fortawesome/free-solid-svg-icons'

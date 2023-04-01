@@ -10,15 +10,15 @@ margin: 2rem ;
 }
 .total{
     display: flex;
-    background-color: rgb(0, 255, 255);
+    background-color: rgb(49, 49, 49);;
     flex-direction: column;
     padding: 1rem;
     margin:1rem 1rem;
     border-radius: 1rem;
-    max-height: 100px;
-    position: fixed;
+    max-height: 200px;
     width:15vw;
-    right: 8rem;
+    color: #fff;
+
     
 }
 
@@ -29,6 +29,8 @@ margin: 2rem ;
 .buttons{
     text-align: center;
     margin-top: 1rem;
+    position: relative;
+    bottom: 0;
 }
 .buttons button {
     border: none;
