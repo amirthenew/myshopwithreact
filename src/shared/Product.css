@@ -5,6 +5,7 @@
     flex-direction: column;
     background-color: rgb(184, 184, 184);
 
+
     
 }
 
@@ -21,7 +22,8 @@
 display: flex;
 
 margin: auto;
-   height: 250px;
+   height: 300px;
+   max-width: 200px;
 }
 
 .icon {
@@ -58,3 +60,53 @@ margin: auto;
     justify-content: space-between;
     margin-top: 0.3rem;
 }
+@media only screen and (min-width:320px) and (max-width:425px)  {
+    
+    
+    
+    .box{
+
+width: 300px;
+display: flex;
+flex-direction: column;
+margin: auto;
+
+
+
+    }
+    img{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+           height: 200px;
+
+
+        }
+
+        .container{
+
+            background-color: rgb(184, 184, 184);
+        
+        
+            
+        }
+        .icon {
+            font-size: x-large;
+        }
+
+        .price {
+            background-color: #00a9fd;
+        
+            color: #fff;
+            border-radius: .5rem;
+            padding: 0.2rem;
+            line-height: 30px;
+        }
+    
+}
+
+
+
+
+
