@@ -1,11 +1,26 @@
 
 .container {
-    display: grid;
-    width: 100vw;
-    grid-template-columns: repeat(auto-fill, 300px)
 
-   
-    
+    display: grid;
+grid-template-columns:repeat(5,1fr)
+
+
 
 }
 
+@media only screen and (max-width:1024px) {
+    .container{
+        display: grid;
+        grid-template-columns:repeat(3,1fr);
+        width: 1140px;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:425px)  {
+    .container{
+        display: grid;
+        grid-area:auto;
+
+
+    }
+}

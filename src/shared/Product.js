@@ -24,15 +24,15 @@ const Product = ({productData}) => {
     const minusIcon = <FontAwesomeIcon icon={faMinus}/>
     const cartPlus = <FontAwesomeIcon icon={faCartPlus}/> 
     const{state,dispatch} = useContext(CartContext);
-    return ( <div className='container'>
-
+    return ( 
+        
+    <div className='container'>
     <div className='box'>
     <Link to={`/products/${productData.id}`}><img className='image' src={productData.image} alt="product" style={{width: "200px"}} /></Link>
         <h3>{shorter(productData.title)}</h3>
         <div className='priceandcounter'>
         <span className='price'>{productData.price} $</span>
         <div>
-
         {quantityCount(state,productData.id) > 1 &&  <button className='icon' onClick={()=>dispatch({type:'DECREASE',payload : productData})}>{minusIcon}</button>}
         {quantityCount(state,productData.id) === 1 && <button className='icon' onClick={()=>dispatch({type:'REMOVE_ITEM' ,payload :productData})}>{faTrashs}</button> }
         {quantityCount(state,productData.id) > 0 && <span className='count'>{quantityCount(state,productData.id)}</span> }
@@ -41,19 +41,11 @@ const Product = ({productData}) => {
             <button className='icon' onClick={()=>dispatch({type:'INCREASE',payload: productData})}>{PlusIcon}</button> :
             <button className='icon' onClick={()=>dispatch({type:'ADD_ITEM',payload: productData})}>{cartPlus}</button>
         }
-
-        
-    
         </div>
         </div>
-        
         <div className='details'>
-
-        
         </div>
-        
-    </div>
- 
+        </div>
         </div> );
 }
  

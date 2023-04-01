@@ -17,7 +17,6 @@ function App() {
   return (
    <ProductContextProvider>
    <CartContextProvider>
-   <Header/>
    <Routes>
    <Route path='/products/:id' element={<ProductDetails/>} />
    <Route path='/products' element={<Store/>} />

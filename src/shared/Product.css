@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     background-color: rgb(184, 184, 184);
+
     
 }
 
@@ -11,16 +12,15 @@
     background-color: rgb(255, 255, 255);
     padding: 1rem;
     border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 5px 5px 20px #3f3f3f;
     min-height: 150px;
-    width: 200px;
+
 
 }
 
 .image{
+display: flex;
 
+margin: auto;
    height: 250px;
 }
 
@@ -44,9 +44,7 @@
     border-radius: 0.5rem;
 }
 
-.details{
-    
-}
+
 
 .price {
     background-color: #00a9fd;
