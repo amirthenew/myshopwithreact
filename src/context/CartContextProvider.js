@@ -27,6 +27,7 @@ const cartReducer = (state,action) =>{
                         ...action.payload,
                         quantity : 1
                     })
+                    localStorage.setItem('productlist',JSON.stringify(state.selectedItems))
             }
             return{
                 ...state,
