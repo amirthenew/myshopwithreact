@@ -7,11 +7,7 @@
     display: flex;
     justify-content:space-between;
     width: 100%;
-
-
-
-
-
+    overflow: hidden;
 
 }
 
@@ -43,7 +39,9 @@ justify-content: center;
     
   
     .header{
-        width: 400px
+        width: 400px;
+        overflow: hidden;
+        max-width:425px;
     }
 
     .cart{

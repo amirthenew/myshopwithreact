@@ -4,6 +4,7 @@
     display: grid;
 grid-template-columns:repeat(4,1fr);
 position: relative;
+overflow: hidden;
 
 
 
@@ -14,6 +15,7 @@ position: relative;
     .container{
         display: grid;
         grid-template-columns:repeat(2,1fr);
+        overflow: hidden;
     }
 }
 
@@ -21,7 +23,8 @@ position: relative;
     .container{
 display: grid;
 grid-template-columns: 425px;
-width: 425px;
+overflow: hidden;
+width:fit-content;
 
 
     }
