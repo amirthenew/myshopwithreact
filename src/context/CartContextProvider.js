@@ -53,7 +53,10 @@ const cartReducer = (state,action) =>{
                 state.selectedItems[indexI].quantity ++;
                 const listInLocal = JSON.parse(localStorage.getItem('productlist'))
                 console.log(listInLocal);
-                
+                console.log(state.selectedItems);
+                localStorage.setItem('productlist',JSON.stringify(state.selectedItems))
+
+
                 
                 return {
                  
@@ -93,8 +96,9 @@ export const CartContext = createContext()
 
 const CartContextProvider = ({children}) => {
     useEffect(()=>{
-        localStorage.getItem('product');
-        console.log(localStorage.getItem('product'));
+        localStorage.getItem('productlist');
+        console.log(JSON.parse(localStorage.getItem('productlist')));
+        selectedItems.push(JSON.parse(localStorage.getItem('productlist')))
         },[])
 const [state,dispatch] = useReducer(cartReducer,initialState)
 
