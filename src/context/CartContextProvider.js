@@ -1,5 +1,7 @@
+import React,{useReducer,createContext,useEffect} from 'react';
 
-import React,{useReducer,createContext} from 'react';
+
+
 
 const initialState = {
     selectedItems : [],
@@ -14,9 +16,12 @@ const totalProduct = (items)=>{
     return {itemsCounter,total}
 }
 
+
+
 console.log(totalProduct);
 
 const cartReducer = (state,action) =>{
+    
     console.log(state);
     console.log(action);
     switch(action.type){
@@ -46,6 +51,10 @@ const cartReducer = (state,action) =>{
 
                 const indexI = state.selectedItems.findIndex(item=>item.id=== action.payload.id)
                 state.selectedItems[indexI].quantity ++;
+                const listInLocal = JSON.parse(localStorage.getItem('productlist'))
+                console.log(listInLocal);
+                
+                
                 return {
                  
                     ...state,
@@ -59,6 +68,7 @@ const cartReducer = (state,action) =>{
                     ...totalProduct(state.selectedItems)
                 }
             case 'CHECKOUT':
+                localStorage.removeItem('productlist')
                 return{
                     selectedItems : [],
                     itemsCounter : 0,
@@ -66,6 +76,7 @@ const cartReducer = (state,action) =>{
                     checkout : true
                 }
             case 'CLEAR':
+                localStorage.removeItem('productlist')
                 return{
                     selectedItems : [],
                     itemsCounter : 0,
@@ -81,7 +92,10 @@ const cartReducer = (state,action) =>{
 export const CartContext = createContext()
 
 const CartContextProvider = ({children}) => {
-
+    useEffect(()=>{
+        localStorage.getItem('product');
+        console.log(localStorage.getItem('product'));
+        },[])
 const [state,dispatch] = useReducer(cartReducer,initialState)
 
     return (
