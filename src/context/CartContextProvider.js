@@ -97,6 +97,19 @@ const CartContextProvider = ({children}) => {
 
        const productList =  JSON.parse(localStorage.getItem('productlist'))
        console.log(productList);
+       initialState.selectedItems = productList
+       const count = [];
+       productList.map((item)=>{
+        console.log(item.quantity);
+        count.push(item.quantity)
+        console.log(count);
+       })
+
+        const itemsCounter = count.reduce(
+        (accumulator, currentValue) => accumulator + currentValue,0)
+        initialState.itemsCounter = itemsCounter
+;
+
         },[])
     
 
