@@ -8,6 +8,8 @@ const Header = () => {
 
   const cartPlus = <FontAwesomeIcon icon={faCartPlus}/> 
   const {state} = useContext(CartContext)
+  const productList = JSON.parse(localStorage.getItem('productlist'))
+  console.log(productList);
 
     return (
         <div className={styles.header}>
@@ -15,7 +17,12 @@ const Header = () => {
         <Link style={{color:'#fff',textDecoration:'none'}} to='/products'><h3 style={{lineHeight:'45px'}}>bcak to shop</h3></Link>
         <div className={styles.cart}>
           <Link to='/cart'>
-          <span className={styles.counter}>{state.itemsCounter}</span>
+          <span className={styles.counter}>
+          {
+            state.itemsCounter
+          }
+          
+          </span>
           <i>{cartPlus}</i>
           </Link>
           
