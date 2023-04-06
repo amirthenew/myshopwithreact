@@ -20,6 +20,8 @@ const totalProduct = (items)=>{
 
 
 const cartReducer = (state,action) =>{
+
+    
     switch(action.type){
         case 'ADD_ITEM':
             if (!state.selectedItems.find(item=>item.id === action.payload.id)) {
@@ -95,21 +97,22 @@ export const CartContext = createContext()
 const CartContextProvider = ({children}) => {
     useEffect(()=>{
 
-       const productList =  JSON.parse(localStorage.getItem('productlist'))
-    //    const productCount = JSON.parse(localStorage.getItem('pro'))
-       console.log(productList);
-       initialState.selectedItems = productList
-       const count = [];
-       productList.map((item)=>{
-        count.push(item.quantity)
-       })
-
-        const itemsCounter = count.reduce(
-        (accumulator, currentValue) => accumulator + currentValue,0)
-        initialState.itemsCounter = itemsCounter
-;
-
-        },[])
+        const productList =  JSON.parse(localStorage.getItem('productlist'))
+     //    const productCount = JSON.parse(localStorage.getItem('pro'))
+        console.log(productList);
+        initialState.selectedItems = productList
+        const count = [];
+        productList.map((item)=>{
+         count.push(item.quantity)
+        })
+ 
+         const itemsCounter = count.reduce(
+         (accumulator, currentValue) => accumulator + currentValue,0)
+         initialState.itemsCounter = itemsCounter
+         console.log(itemsCounter)
+ ;
+ 
+         },[])
     
 
 const [state,dispatch] = useReducer(cartReducer,initialState)

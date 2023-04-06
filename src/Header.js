@@ -8,7 +8,7 @@ const Header = () => {
 
   const cartPlus = <FontAwesomeIcon icon={faCartPlus}/> 
   const {state} = useContext(CartContext)
-
+  console.log(state.itemsCounter);
 
     return (
         <div className={styles.header}>
