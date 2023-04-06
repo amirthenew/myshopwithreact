@@ -10,6 +10,8 @@ const initialState = {
     checkout : false
 }
 
+
+
 const totalProduct = (items)=>{
     const itemsCounter = items.reduce((total,product)=>total+product.quantity,0)
     let total = items.reduce((total, product) => total + product.price * product.quantity, 0).toFixed(2);
@@ -20,7 +22,7 @@ const totalProduct = (items)=>{
 
 
 const cartReducer = (state,action) =>{
-
+   
     
     switch(action.type){
         case 'ADD_ITEM':
@@ -106,12 +108,13 @@ useEffect(()=>{
     initialState.selectedItems = productList
     const count = [];
     productList.map((item)=>{
-     count.push(item.quantity)
+    count.push(item.quantity)
     })
 
-     const itemsCounter = count.reduce(
-     (accumulator, currentValue) => accumulator + currentValue,0)
-     initialState.itemsCounter = itemsCounter
+    const itemsCounter = count.reduce(
+    (accumulator, currentValue) => accumulator + currentValue,initialState.itemsCounter)
+    initialState.itemsCounter = itemsCounter
+
 ;
 
      },[])
