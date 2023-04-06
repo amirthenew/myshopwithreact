@@ -8,8 +8,7 @@ const Header = () => {
 
   const cartPlus = <FontAwesomeIcon icon={faCartPlus}/> 
   const {state} = useContext(CartContext)
-  const productList = JSON.parse(localStorage.getItem('productlist'))
-  console.log(productList);
+
 
     return (
         <div className={styles.header}>

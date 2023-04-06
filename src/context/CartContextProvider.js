@@ -96,13 +96,12 @@ const CartContextProvider = ({children}) => {
     useEffect(()=>{
 
        const productList =  JSON.parse(localStorage.getItem('productlist'))
+    //    const productCount = JSON.parse(localStorage.getItem('pro'))
        console.log(productList);
        initialState.selectedItems = productList
        const count = [];
        productList.map((item)=>{
-        console.log(item.quantity);
         count.push(item.quantity)
-        console.log(count);
        })
 
         const itemsCounter = count.reduce(
