@@ -8,13 +8,23 @@ const Header = () => {
 
   const cartPlus = <FontAwesomeIcon icon={faCartPlus}/> 
   const {state} = useContext(CartContext)
-  const productList =  JSON.parse(localStorage.getItem('productlist'))
-  const count = [];
-  productList.map((item)=>{
-  count.push(item.quantity)})
-  const itemsCounter = count.reduce((a,b)=>a+b,0)
-  state.itemsCounter = itemsCounter
+  
 
+  localStorage.getItem('productList')
+  const productList =  JSON.parse(localStorage.getItem('productlist'))
+  if (productList) {
+    const count = [];
+    productList.map((item)=>{
+    count.push(item.quantity)})
+    const itemsCounter = count.reduce((a,b)=>a+b,0)
+    state.itemsCounter = itemsCounter
+  console.log(itemsCounter);   
+  } else {
+    console.log('taesdasd');
+  }
+
+  
+  
 
 
     return (

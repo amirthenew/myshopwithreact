@@ -3,6 +3,7 @@ import React,{useReducer,createContext,useEffect} from 'react';
 
 
 
+
 const initialState = {
     selectedItems : [],
     itemsCounter :0,
@@ -104,16 +105,22 @@ const [state,dispatch] = useReducer(cartReducer,initialState)
 
 useEffect(()=>{
 
-    const productList =  JSON.parse(localStorage.getItem('productlist'))
-    initialState.selectedItems = productList
-    const count = [];
-    productList.map((item)=>{
-    count.push(item.quantity)
-    })
+        const productList =  JSON.parse(localStorage.getItem('productlist'))
+        if (productList){
 
-    const itemsCounter = count.reduce(
-    (accumulator, currentValue) => accumulator + currentValue,initialState.itemsCounter)
-    initialState.itemsCounter = itemsCounter
+            initialState.selectedItems = productList
+            const count = [];
+            productList.map((item)=>{
+            count.push(item.quantity)
+            })
+        
+            const itemsCounter = count.reduce(
+            (accumulator, currentValue) => accumulator + currentValue,initialState.itemsCounter)
+            initialState.itemsCounter = itemsCounter
+        }
+
+
+
 
 ;
 
