@@ -1,4 +1,4 @@
-import React,{useContext} from 'react';
+import React,{useContext,useEffect} from 'react';
 import styles from './Header.module.css'
 import { CartContext } from './context/CartContextProvider';
 import { Link } from 'react-router-dom';
@@ -8,7 +8,12 @@ const Header = () => {
 
   const cartPlus = <FontAwesomeIcon icon={faCartPlus}/> 
   const {state} = useContext(CartContext)
+  
+useEffect(()=>{
+
+  console.log('test');
   console.log(state.itemsCounter);
+},[])
 
     return (
         <div className={styles.header}>
