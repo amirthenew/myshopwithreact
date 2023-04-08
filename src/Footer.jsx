@@ -3,7 +3,7 @@ import styles from './Footer.module.css'
 
 const Footer = () => {
     return ( <div className={styles.footer}>
-        <h2>all rights reserved by webidemy</h2>
+        <span>all rights reserved by webidemy</span>
         </div> );
 }
  
