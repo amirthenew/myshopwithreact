@@ -45,11 +45,12 @@ margin: 2rem ;
 display: flex;
 background-color: aqua;
 }
+
 .total{
+    display: flex;
     position: fixed;
-    bottom:0;
-    right: 0;
-    width: 400px;
+    top:50px;
+    min-width: 400px;
     height: 70px;
     display: flex;
     justify-content: center;
