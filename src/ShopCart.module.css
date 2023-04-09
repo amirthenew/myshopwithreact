@@ -16,7 +16,7 @@ margin: 2rem ;
     margin:1rem 1rem;
     border-radius: 1rem;
     max-height: 200px;
-    width:15vw;
+
     color: #fff;
 
     
@@ -35,4 +35,30 @@ margin: 2rem ;
 .buttons button {
     border: none;
     padding: .5rem;
+}
+
+
+
+
+@media only screen and (max-width:1000px) {
+.total{
+    position: fixed;
+    top:0;
+    width: 100vw;
+}
+
+.leftbutton{
+    margin-left: 0.5rem ;
+}
+
+.buttons{
+    text-align: center;
+    margin-top: 1rem;
+    position: relative;
+    bottom: 0;
+}
+.buttons button {
+    border: none;
+    padding: .5rem;
+}
 }

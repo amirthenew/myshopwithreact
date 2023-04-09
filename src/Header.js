@@ -19,8 +19,6 @@ const Header = () => {
     const itemsCounter = count.reduce((a,b)=>a+b,0)
     state.itemsCounter = itemsCounter
   console.log(itemsCounter);   
-  } else {
-    console.log('taesdasd');
   }
 
   
