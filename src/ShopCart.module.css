@@ -41,24 +41,25 @@ margin: 2rem ;
 
 
 @media only screen and (max-width:1000px) {
+    .container {
+display: flex;
+background-color: aqua;
+}
 .total{
     position: fixed;
-    top:0;
-    width: 100vw;
+    bottom:0;
+    right: 0;
+    width: 400px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
 }
 
-.leftbutton{
-    margin-left: 0.5rem ;
-}
 
-.buttons{
-    text-align: center;
-    margin-top: 1rem;
-    position: relative;
-    bottom: 0;
-}
+
+
 .buttons button {
     border: none;
-    padding: .5rem;
+
 }
 }
