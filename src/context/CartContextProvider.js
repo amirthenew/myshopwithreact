@@ -1,9 +1,5 @@
 import React,{useReducer,createContext,useEffect} from 'react';
 
-
-
-
-
 const initialState = {
     selectedItems : [],
     itemsCounter :0,
@@ -11,19 +7,13 @@ const initialState = {
     checkout : false
 }
 
-
-
 const totalProduct = (items)=>{
     const itemsCounter = items.reduce((total,product)=>total+product.quantity,0)
     let total = items.reduce((total, product) => total + product.price * product.quantity, 0).toFixed(2);
     return {itemsCounter,total}
 }
 
-
-
-
 const cartReducer = (state,action) =>{
-   
     
     switch(action.type){
         case 'ADD_ITEM':
@@ -53,15 +43,8 @@ const cartReducer = (state,action) =>{
 
                 const indexI = state.selectedItems.findIndex(item=>item.id=== action.payload.id)
                 state.selectedItems[indexI].quantity ++;
-                const listInLocal = JSON.parse(localStorage.getItem('productlist'))
-                console.log(listInLocal);
-                console.log(state.selectedItems);
                 localStorage.setItem('productlist',JSON.stringify(state.selectedItems))
-
-
-                
                 return {
-                 
                     ...state,
                     ...totalProduct(state.selectedItems)
                 }
@@ -107,7 +90,6 @@ useEffect(()=>{
 
         const productList =  JSON.parse(localStorage.getItem('productlist'))
         if (productList){
-
             initialState.selectedItems = productList
             const count = [];
             productList.map((item)=>{
@@ -118,13 +100,7 @@ useEffect(()=>{
             (accumulator, currentValue) => accumulator + currentValue,initialState.itemsCounter)
             initialState.itemsCounter = itemsCounter
         }
-
-
-
-
-;
-
-     },[])
+    },[])
 
     return (
 <CartContext.Provider value={{state,dispatch}}>
