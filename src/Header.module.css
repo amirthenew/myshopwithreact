@@ -24,7 +24,7 @@
 }
 
 .categorybar{
-    background-color: aqua;
+    background-color: rgba(49, 49, 49, 0.581);
     width: 100%;
     color: beige;
     height: 50px;
@@ -44,7 +44,8 @@
 .categorybar ul li {
     list-style-type: none;
     display: inline-block;
-    color: black;
+    color: rgb(255, 255, 255);
+    padding: .8rem;
     
 }
 i{

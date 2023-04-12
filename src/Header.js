@@ -46,6 +46,7 @@ const Header = () => {
       </div>
       <div className={styles.categorybar}>
       <ul>
+      
       <li>mens clothes</li>
       <li>women clothes</li>
       <li>Electronic</li>
