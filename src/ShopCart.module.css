@@ -1,7 +1,7 @@
 .container {
 display: flex;
 padding: 1rem 3rem;
-margin: 2rem ;
+
 
 width: 65%;
 min-height: 100vw;
@@ -24,6 +24,7 @@ top: 25px;
     display: flex;
 position: fixed;
 top: 50px;
+z-index: 1;
     right: 0;
     height: 90vh;
     background-color: rgb(105, 105, 105);;
