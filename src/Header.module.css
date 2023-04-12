@@ -8,6 +8,9 @@
     justify-content:space-between;
     width: 100%;
     overflow: hidden;
+    position: fixed;
+    z-index: 9;
+    top: 0;
 
 }
 

@@ -4,6 +4,8 @@
     color: #fff;
     text-align: center;
     padding: .2rem;
+    position: relative;
+    z-index: 10;
     
 
 }

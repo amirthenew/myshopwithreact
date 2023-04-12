@@ -2,85 +2,91 @@
 display: flex;
 padding: 1rem 3rem;
 margin: 2rem ;
+
+width: 65%;
+min-height: 100vw;
+
+position: relative;
+top: 25px;
+
 }
+
 
 .cart{
     display: flex;
     flex-direction: column;
+ 
 }
+
+
 .total{
+    width: 20%;
     display: flex;
-    position: fixed;
+position: fixed;
     right: 0;
-    top: 40px;
+    height: 90vh;
     background-color: rgb(49, 49, 49);;
     flex-direction: column;
     padding: 1rem;
-    margin:1rem 1rem;
-    border-radius: 1rem;
-    max-height: 200px;
+    margin:-1rem 1rem;
+align-items: center;
 
     color: #fff;
 
     
 }
 
-.leftbutton{
-    margin-left: 0.5rem ;
+
+.buttonbox{
+    display: flex;
+    justify-content: center;
 }
 
-.buttons{
-    text-align: center;
-    margin-top: 1rem;
-    position: relative;
-    bottom: 0;
-}
-.buttons button {
+.btn{
     border: none;
-    padding: .5rem;
+    margin: 5px 10px;
+    padding: .2rem;
+    display: flex;
+    width: 5vw;
+    flex-direction: ;
+
+    
 }
 
 
 
 
 @media only screen and (max-width:1000px) {
-    .container {
-display: flex;
-margin: 0;
-}
+
 
 .total{
+
     display: inline-block;
-    position: fixed;
-    top:33px;
-right: 0;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-    text-align: center;
-    border-radius: 0
-    ;
-}
-.cart{
-margin-top: 80px;
+position: fixed;
+bottom: 0;
+width: 100vw;
+height: 35px;
+margin:0;
+
+    
 }
 
+.buttonbox{
 
-
-
-.leftbutton{
-    margin-left: 0.5rem ;
+    float:right ;
+        margin: 5px 10px;
+        width: 50vw;
 }
-
-.buttons{
-    text-align: center;
-    margin-top: 0;
-    position: relative;
-    margin-top: 10px;
-}
-.buttons button {
+.btn{
     border: none;
-    padding: .25rem;
+width: 80px;
+
+
+    
+}
+
+.total span {
+padding-left: 50px;
+
 }
 }
