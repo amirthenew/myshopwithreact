@@ -23,12 +23,13 @@ top: 25px;
     width: 20%;
     display: flex;
 position: fixed;
+top: 50px;
     right: 0;
     height: 90vh;
-    background-color: rgb(49, 49, 49);;
+    background-color: rgb(105, 105, 105);;
     flex-direction: column;
     padding: 1rem;
-    margin:-1rem 1rem;
+    margin:0;
 align-items: center;
 
     color: #fff;
@@ -60,7 +61,7 @@ align-items: center;
 
 
 .total{
-
+    top :auto;
     display: inline-block;
 position: fixed;
 bottom: 0;
