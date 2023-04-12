@@ -29,8 +29,9 @@ const Header = () => {
         <div className={styles.header}>
         <Link style={{color:'#fff',textDecoration:'none'}} to='/products'><h3 style={{lineHeight:'45px'}}>bcak to shop</h3></Link>
         <div className={styles.cart}>
-          <Link to='/cart'>
+          <Link className={styles.link} to='/cart'>
           <span className={styles.counter}>
+          
           {
             state.itemsCounter
           }

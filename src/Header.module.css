@@ -33,9 +33,11 @@ justify-content: center;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    text-decoration-line: none;
+    text-decoration-color:aqua !important;
 }
-
+.link{
+    text-decoration: none;
+}
 
 
 @media only screen and (min-width:320px) and (max-width:425px)  {
