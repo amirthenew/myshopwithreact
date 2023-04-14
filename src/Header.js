@@ -4,10 +4,12 @@ import { CartContext } from './context/CartContextProvider';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faCartPlus} from '@fortawesome/free-solid-svg-icons'
+import{  ProductsContext } from './context/ProductContextProvider';
 const Header = () => {
 
   const cartPlus = <FontAwesomeIcon icon={faCartPlus}/> 
   const {state} = useContext(CartContext)
+
   
 
   localStorage.getItem('productList')
@@ -23,6 +25,9 @@ const Header = () => {
 
   
   
+
+  const products = useContext(ProductsContext)
+  console.log(products);
 
 
     return (

@@ -23,13 +23,13 @@ top: 25px;
     width: 20%;
     display: flex;
 position: fixed;
-top: 50px;
+top: 48px;
 z-index: 1;
     right: 0;
     height: 90vh;
     background-color: rgb(105, 105, 105);;
     flex-direction: column;
-    padding: 1rem;
+    padding: 4rem 0 ;
     margin:0;
 align-items: center;
 

@@ -18,6 +18,7 @@ import {faCartPlus} from '@fortawesome/free-solid-svg-icons'
 //context
 import { CartContext } from '../context/CartContextProvider';
 
+
 const Product = ({productData}) => {
     const faTrashs = <FontAwesomeIcon icon={faTrash}/>
     const PlusIcon = <FontAwesomeIcon icon={faPlus}/>

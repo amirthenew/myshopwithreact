@@ -15,6 +15,7 @@ const Store = () => {
             products.map(product=><Product
     key={product.id}
     productData={product}/>
+    
  ) } 
         </div>
     
