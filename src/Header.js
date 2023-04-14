@@ -19,21 +19,21 @@ const Header = () => {
     productList.map((item)=>{
     count.push(item.quantity)})
     const itemsCounter = count.reduce((a,b)=>a+b,0)
-    state.itemsCounter = itemsCounter
-  console.log(itemsCounter);   
+    state.itemsCounter = itemsCounter  
   }
 
   
   
 
   const products = useContext(ProductsContext)
-  console.log(products.map((item)=>{
-    item.category == "men's clothing" ? console.log(item) : console.log('not');
-
-  }));
+ 
 
   const changeCategory = ()=>{
-    console.log('category');
+    
+    console.log(products.map((item)=>{
+      item.category == "men's clothing" ? console.log(item) : console.log('not');
+  
+    }))
   }
 
 
