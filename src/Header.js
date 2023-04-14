@@ -27,7 +27,14 @@ const Header = () => {
   
 
   const products = useContext(ProductsContext)
-  console.log(products);
+  console.log(products.map((item)=>{
+    item.category == "men's clothing" ? console.log(item) : console.log('not');
+
+  }));
+
+  const changeCategory = ()=>{
+    console.log('category');
+  }
 
 
     return (
@@ -52,7 +59,7 @@ const Header = () => {
       <div className={styles.categorybar}>
       <ul>
       
-      <li>mens clothes</li>
+      <li onClick={changeCategory}>mens clothes</li>
       <li>women clothes</li>
       <li>Electronic</li>
       <li>Jwellery</li>
