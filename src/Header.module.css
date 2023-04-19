@@ -92,5 +92,11 @@ display: none;
     
         
     }
+
+    .menu { 
+        height: 20px;
+        width: 200px;
+        background-color: #fff;
+    }
     
 }

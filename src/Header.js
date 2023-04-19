@@ -57,6 +57,13 @@ const Header = () => {
 
       </div>
       <div className={styles.categorybar}>
+
+      <div className={styles.categoryburger}>
+      <span className={styles.menu}></span>
+      <span className={styles.menu}></span>
+      <span className={styles.menu}></span>
+      
+      </div>
       <ul>
       
       <li onClick={changeCategory}>mens clothes</li>
