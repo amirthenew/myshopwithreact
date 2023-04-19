@@ -95,8 +95,10 @@ display: none;
 
     .menu { 
         height: 20px;
-        width: 200px;
+        width: 50px;
         background-color: #fff;
-    }
+        text-align: center;
+margin: auto;   
+display: block;}
     
 }
