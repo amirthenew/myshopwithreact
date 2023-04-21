@@ -93,12 +93,27 @@ display: none;
         
     }
 
-    .menu { 
-        height: 20px;
+    .categoryburger { 
+
+        text-align: center;
+margin: auto; 
+height: 50px;  
+
+}
+    .menuup{
+margin-bottom: 2px;
+height: 10px;
+width: 50px;
+background-color: #fff;
+    }
+    .menucenter{
+        height: 10px;
         width: 50px;
         background-color: #fff;
-        text-align: center;
-margin: auto;   
-display: block;}
-    
+    }
+    .menudown{
+        height: 10px;
+        width: 50px;
+        background-color: #fff;
+    }
 }

@@ -59,9 +59,9 @@ const Header = () => {
       <div className={styles.categorybar}>
 
       <div className={styles.categoryburger}>
-      <span className={styles.menu}>-</span>
-      <span className={styles.menu}>-</span>
-      <span className={styles.menu}>-</span>
+      <span className={styles.menuup}></span>
+      <span className={styles.menucenter}></span>
+      <span className={styles.menudown}></span>
       
       </div>
       <ul>
