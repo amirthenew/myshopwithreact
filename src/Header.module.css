@@ -24,13 +24,14 @@
 }
 
 .categorybar{
-    background-color: rgba(49, 49, 49, 1);
+    background-color: rgb(49, 49, 49);
     width: 100%;
-    color: beige;
+    color: #fff;
     height: 50px;
     position: relative;
     top: 48px;
     z-index: 6;
+
     
 
     
@@ -87,19 +88,32 @@ justify-content:flex-end;
 margin-right: -2rem;
     }
 
+
+    .categorybar{
+
+   
+     
+        
+    
+        
+    }
+
     .categorybar ul{
 display: none;
     
         
     }
 
+
+
     .categoryburger { 
 
-        text-align: center;
-margin: auto; 
+
 height: 50px;  
-padding: 1rem;
-margin: 0 auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 
 }
     .menuup{
