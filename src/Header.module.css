@@ -98,22 +98,25 @@ display: none;
         text-align: center;
 margin: auto; 
 height: 50px;  
+padding: 1rem;
+margin: 0 auto;
 
 }
     .menuup{
 margin-bottom: 2px;
-height: 10px;
+height: 5px;
 width: 50px;
 background-color: #fff;
     }
     .menucenter{
-        height: 10px;
+        height: 5px;
         width: 50px;
         background-color: #fff;
     }
     .menudown{
-        height: 10px;
+        height: 5px;
         width: 50px;
         background-color: #fff;
+        margin-top: 2px;
     }
 }
