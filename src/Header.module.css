@@ -1,6 +1,6 @@
 .header{
 
-    height: 100px;
+    height: 99px;
     color: #fff;
     width: 100%;
     z-index: 10;
@@ -25,12 +25,13 @@
 
 .categorybar{
     background-color: rgb(49, 49, 49);
-    width: 100%;
+
     color: #fff;
     height: 50px;
     position: relative;
     top: 48px;
     z-index: 6;
+    width: 100%;
 
     
 
@@ -82,24 +83,23 @@ justify-content:flex-end;
         width: 140vw;
         overflow: hidden;
         max-width:425px;
+        height: 50px;
     }
 
     .cart{
 margin-right: -2rem;
     }
-
-
     .categorybar{
-
-   
-     
-        
+background-color: black;
+        height: 50px;
+        margin-top: -.1rem;
+display: none;
     
         
     }
 
     .categorybar ul{
-display: none;
+
     
         
     }
@@ -112,8 +112,7 @@ display: none;
 height: 50px;  
 display: flex;
 flex-direction: column;
-justify-content: center;
-align-items: center;
+
 
 }
     .menuup{

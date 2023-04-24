@@ -40,6 +40,7 @@ const Header = () => {
     return (
       <div className={styles.header}>
       <div className={styles.upperdiv}>
+
       <Link style={{color:'#fff',textDecoration:'none'}} to='/products'><h3 style={{lineHeight:'45px'}}>bcak to shop</h3></Link>
       <div className={styles.cart}>
         <Link className={styles.link} to='/cart'>
@@ -72,6 +73,7 @@ const Header = () => {
       <li>Jwellery</li>
       </ul>
       </div>
+
       </div>
 
     )
