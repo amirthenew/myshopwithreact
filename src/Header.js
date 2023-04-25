@@ -65,10 +65,16 @@ const Header = () => {
       </div>
       </div>
       <div className={styles.categorybar}>
-
-    
       <ul>
-      
+      <li onClick={changeCategory}>mens clothes</li>
+      <li>women clothes</li>
+      <li>Electronic</li>
+      <li>Jwellery</li>
+      </ul>
+      </div>
+
+      <div className={styles.menu}>
+      <ul>
       <li onClick={changeCategory}>mens clothes</li>
       <li>women clothes</li>
       <li>Electronic</li>
