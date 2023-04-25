@@ -40,6 +40,7 @@ const Header = () => {
     return (
       <div className={styles.header}>
       <div className={styles.upperdiv}>
+      
 
       <Link style={{color:'#fff',textDecoration:'none'}} to='/products'><h3 style={{lineHeight:'45px'}}>bcak to shop</h3></Link>
       <div className={styles.cart}>
@@ -53,9 +54,10 @@ const Header = () => {
         </span>
         <i>{cartPlus}</i>
         </Link>
+    
         
       </div>
-  <div className={styles.categoryburger}>
+      <div className={styles.categoryburger}>
       <div className={styles.menuup}></div>
       <div className={styles.menucenter}></div>
       <div className={styles.menudown}></div>
@@ -74,20 +76,17 @@ const Header = () => {
       </ul>
       </div>
 
-      <div className={styles.menu}>
-      <ul>
-      
-      <li onClick={changeCategory}>mens clothes</li>
-      <li>women clothes</li>
-      <li>Electronic</li>
-      <li>Jwellery</li>
-      </ul>
-      </div>
 
-      </div>
+
+</div>
+
+
 
     )
         
 }
  
 export default Header;
+
+
+
