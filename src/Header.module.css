@@ -37,6 +37,11 @@
     
 }
 
+.menu{
+    display: none;
+}
+
+
 .categoryburger{
     display: none;
 }
@@ -81,19 +86,14 @@ justify-content:flex-end;
     text-decoration: none;
 }
 
-.menu{
-    display: none;
-}
 
 
 @media only screen and  (max-width:425px)  {
     
   
     .header{
-        
+
         overflow: hidden;
-
-
     }
 
     .cart{
@@ -104,6 +104,13 @@ display: none;
     
         
     }
+
+    .menu{
+        height: 600px;
+        width:600vw;
+        background-color: rgb(49, 49, 49);
+display: flex;
+       }
 
 
     .categoryburger { 
@@ -134,12 +141,7 @@ background-color: #fff;
         margin-top: 2px;
     }
 
-    .menu{
-     height: 600px;
-     width:100vw;
-     background-color: rgb(49, 49, 49);
-     display: flex;
-    }
+
 
 
     .menu ul{
