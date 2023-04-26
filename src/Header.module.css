@@ -6,7 +6,7 @@
     z-index: 10;
     display: flex;
     flex-direction: column;
-
+    position: relative;
 
 
 }
@@ -27,7 +27,7 @@
     background-color: rgb(49, 49, 49);
     color: #fff;
     height: 50px;
-    position: relative;
+    position: absolute;
     top: 48px;
     z-index: 6;
     width: 100%;
@@ -112,10 +112,12 @@ display: none;
 display: flex;
 position: relative;
 top: 45px;
+
        }
        .menu ul{
 
         width: 100vw;
+
        }
 
 
@@ -156,7 +158,16 @@ background-color: #fff;
         text-align: center;
 
        }
+
+       .menu .close {
+
+        display: none;
+       }
    
+       .anim {
+        transform: translateY(100px);
+transition: all 0.5s;
+       }
     
 
     

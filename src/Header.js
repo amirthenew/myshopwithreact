@@ -76,14 +76,15 @@ const Header = () => {
       </ul>
       </div>
 
-      <div className={styles.menu}>
-      <ul>
-      <li onClick={changeCategory}>mens clothes</li>
-      <li>women clothes</li>
-      <li>Electronic</li>
-      <li>Jwellery</li>
-      </ul>
-      </div>
+      {isShown ? (<div className={styles.menu}>
+        <ul>
+        <li onClick={changeCategory}>mens clothes</li>
+        <li>women clothes</li>
+        <li>Electronic</li>
+        <li>Jwellery</li>
+        </ul>
+        </div>) : null}
+      
 
 
 
