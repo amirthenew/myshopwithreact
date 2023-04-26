@@ -6,7 +6,7 @@
     z-index: 10;
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: absolute;
 
 
 }
@@ -27,7 +27,7 @@
     background-color: rgb(49, 49, 49);
     color: #fff;
     height: 50px;
-    position: absolute;
+    position: relative;
     top: 48px;
     z-index: 6;
     width: 100%;
@@ -106,12 +106,14 @@ display: none;
     }
 
     .menu{
-        height: 600px;
+        height: 100vh;
 
         background-color: rgb(49, 49, 49);
 display: flex;
 position: relative;
-top: 45px;
+top: 0;
+animation: openIt .5s ease-in-out  forwards;
+
 
        }
        .menu ul{
@@ -159,15 +161,19 @@ background-color: #fff;
 
        }
 
-       .menu .close {
 
-        display: none;
-       }
-   
-       .anim {
-        transform: translateY(100px);
-transition: all 0.5s;
-       }
+   @keyframes openIt {
+    
+from{
+
+    top : 0;
+}
+to {
+    top: 200px;
+}
+
+   }
+
     
 
     
