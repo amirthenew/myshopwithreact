@@ -1,4 +1,4 @@
-import React,{useContext,useEffect} from 'react';
+import React,{useContext,useState} from 'react';
 import styles from './Header.module.css'
 import { CartContext } from './context/CartContextProvider';
 import { Link } from 'react-router-dom';
@@ -9,7 +9,10 @@ const Header = () => {
 
   const cartPlus = <FontAwesomeIcon icon={faCartPlus}/> 
   const {state} = useContext(CartContext)
-
+  const [isShown,setShow] = useState(false)
+  const handleClick = ()=>{
+    setShow(!isShown)
+}
   
 
   localStorage.getItem('productList')
@@ -57,11 +60,11 @@ const Header = () => {
     
         
       </div>
-      <div className={styles.categoryburger}>
+      <div className={styles.categoryburger} onClick={handleClick}>
       <div className={styles.menuup}></div>
       <div className={styles.menucenter}></div>
       <div className={styles.menudown}></div>
-      
+      {console.log(isShown)}
       </div>
       </div>
       <div className={styles.categorybar}>
