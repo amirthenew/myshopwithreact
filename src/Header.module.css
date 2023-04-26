@@ -106,8 +106,8 @@ display: none;
     }
 
     .menu{
-        height: 100vh;
 
+padding: 2rem;
         background-color: rgb(49, 49, 49);
 display: flex;
 position: relative;
@@ -116,9 +116,34 @@ animation: openIt .5s ease-in-out  forwards;
 
 
        }
+
+
+       .menu li{
+        padding: 1rem;
+       }
+       .menuclose{
+
+transition: all 0.5s;
+        background-color: rgb(49, 49, 49);
+display: flex;
+position: relative;
+top: 0;
+        animation: closeIt .5s ease-in-out  forwards;
+       }
        .menu ul{
 
         width: 100vw;
+height: 400px;
+       }
+
+       .menuclose ul{
+        width: 100vw;
+       }
+
+       .menuclose ul{
+        list-style-type: none;
+        display: inline-block;
+        text-align: center;
 
        }
 
@@ -166,12 +191,23 @@ background-color: #fff;
     
 from{
 
-    top : 0;
+    top : -200px;
 }
 to {
-    top: 200px;
+    top:45px;
 }
 
+   }
+
+   @keyframes closeIt {
+    from{
+
+        top : 200px;
+    }
+    to {
+        top: 0;
+    }
+    
    }
 
     

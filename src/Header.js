@@ -76,14 +76,21 @@ const Header = () => {
       </ul>
       </div>
 
-      {isShown ? (<div className={styles.menu}>
+      {!isShown ? (<div className={styles.menu}>
         <ul>
         <li onClick={changeCategory}>mens clothes</li>
         <li>women clothes</li>
         <li>Electronic</li>
         <li>Jwellery</li>
         </ul>
-        </div>) : null}
+        </div>) : (<div className={styles.menuclose}>
+          <ul>
+          <li onClick={changeCategory}>mens clothes</li>
+          <li>women clothes</li>
+          <li>Electronic</li>
+          <li>Jwellery</li>
+          </ul>
+          </div>)}
       
 
 
