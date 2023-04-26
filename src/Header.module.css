@@ -30,7 +30,8 @@
     position: relative;
     top: 48px;
     z-index: 6;
-    width: 100%;
+
+    width: 100vw;
 
     
 
@@ -111,8 +112,9 @@ padding: 2rem;
         background-color: rgb(49, 49, 49);
 display: flex;
 position: relative;
-top: 0;
+justify-content: center;
 animation: openIt .5s ease-in-out  forwards;
+width: 100vw;
 
 
        }
@@ -121,8 +123,13 @@ animation: openIt .5s ease-in-out  forwards;
        .menu li{
         padding: 1rem;
        }
+       .menuclose li {
+        padding: 1rem;
+       }
        .menuclose{
-
+        justify-content: center;
+        width: 100vw;
+        padding: 2rem;
 transition: all 0.5s;
         background-color: rgb(49, 49, 49);
 display: flex;
@@ -130,20 +137,13 @@ position: relative;
 top: 0;
         animation: closeIt .5s ease-in-out  forwards;
        }
-       .menu ul{
 
-        width: 100vw;
-height: 400px;
-       }
-
-       .menuclose ul{
-        width: 100vw;
-       }
 
        .menuclose ul{
         list-style-type: none;
         display: inline-block;
         text-align: center;
+
 
        }
 
@@ -191,7 +191,7 @@ background-color: #fff;
     
 from{
 
-    top : -200px;
+    top : -250px;
 }
 to {
     top:45px;
@@ -202,10 +202,10 @@ to {
    @keyframes closeIt {
     from{
 
-        top : 200px;
+        top : 45px;
     }
     to {
-        top: 0;
+        top: -250px;
     }
     
    }
