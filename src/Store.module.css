@@ -5,7 +5,7 @@
 grid-template-columns:repeat(4,1fr);
 position: relative;
 overflow: hidden;
-top: 45px;
+top: 90px;
 
 margin-bottom: 2rem;
 
@@ -29,7 +29,8 @@ grid-template-columns: 425px;
 overflow: hidden;
 width:fit-content;
 position: relative;
-top: 0;
+
+top: 45px;
 
 
     }

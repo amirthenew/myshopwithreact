@@ -38,7 +38,7 @@
     
 }
 
-.menu{
+.menu,.menuclose{
     display: none;
 }
 
@@ -115,6 +115,7 @@ position: relative;
 justify-content: center;
 animation: openIt .5s ease-in-out  forwards;
 width: 100vw;
+margin-bottom: 30px;
 
 
        }
